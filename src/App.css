@@ -1,0 +1,62 @@
+main {
+  position: relative;
+  width: min(90%, 540px);
+  padding: 2.5rem 1.5rem;
+
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--Dark-Grayish-Blue);
+}
+
+small {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+
+  color: var(--Neon-Green);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+.divider {
+  margin: 1rem auto 1.5rem;
+  width: 100%;
+  aspect-ratio: 295/16;
+
+  background: url(/images/pattern-divider-mobile.svg) center center/cover no-repeat;
+}
+
+button {
+  position: absolute;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+  border: none;
+  background-color: var(--Neon-Green);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  main {
+    padding: 2.5rem 3rem;
+  }
+  small {
+    margin-bottom: 1.5rem;
+  }
+  .divider {
+    margin: 2rem auto 2.5rem;
+    aspect-ratio: 111/4;
+
+    background-image: url(/images/pattern-divider-desktop.svg);
+  }
+}
